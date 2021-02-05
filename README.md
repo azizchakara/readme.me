@@ -100,7 +100,13 @@ Return userResponse;
 
 METHODE PUT 
 
-Dans le controller, la méme procédure  (CREATE USER)
+Definie la methode dans repository OrderEntity findById(Lond id);
+
+
+
+Dans le controller, 
+
+la méme procédure  (CREATE USER)
 Changer createuser avec updateuser(id,userDto)
 
 Define la methode dans le service
