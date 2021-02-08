@@ -1,6 +1,8 @@
 1-	Create Controller @RestController=Receptionner les données via des requets http
 @RequestMapping = url prefixer dans les méthodes (users)
       Definie les methodes CRUD (controller)  GetMapping PostMapping ….
+      
+      
 
 2-	Configurer l’application avec la base de données
 Application.properties
@@ -137,5 +139,20 @@ userRepository.delete(userEntity);
 
 dans controller
 userService.deleteUser(id);
+
+
+
+------------------------
+create new interface mapper
+@Mapper(componentModel = "****")
+
+
+ClientDto entityToModel(ClientEntity source)
+ClientEntity modelToEntity(ClientDto destiantion)
+@IterableMapping(qualifiedByName = "entityToModel") 
+List<ClientDto> entitiesToModels(List<ClientEntity> clients);
+
+
+
 
 	
